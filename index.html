@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/png" href="static/images/pixelthink-icon.png">
+
+  <title>PixelThink: Towards Efficient Chain-of-Pixel Reasoning</title>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://songw-zju.github.io">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://fscdc.github.io/Reason-Map">
+            ReasonMap
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">PixelThink: Towards Efficient Chain-of-Pixel Reasoning</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://songw-zju.github.io">Song Wang</a><sup>1,2</sup>,</span>
+            <span class="author-block">
+              <a href="https://fangggf.github.io">Gongfan Fang</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://ldkong.com">Lingdong Kong</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://lxtgh.github.io">Xiangtai Li</a><sup>3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=LctFPtgAAAAJ&hl=en">Jianyun Xu</a><sup>4</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=G6IztksAAAAJ&hl=en">Sheng Yang</a><sup>4</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.linkedin.cn/incareer/in/qiang-li-37196013">Qiang Li</a><sup>4</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://person.zju.edu.cn/en/jkzhu">Jianke Zhu</a><sup>1</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://sites.google.com/site/sitexinchaowang">Xinchao Wang</a><sup>2</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Zhejiang University,</span>
+            <span class="author-block"><sup>2</sup>National University of Singapore,</span>
+            <span class="author-block"><sup>3</sup>Nanyang Technological University,</span>
+            <span class="author-block"><sup>4</sup>AD Lab, CaiNiao Inc., Alibaba Group</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2505.xxxxx"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2505.xxxxx"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/songw-zju/PixelThink"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://drive.google.com/drive/u/1/folders/1gy-8IVfLnZB8hEqREewK6c8AQXR9awBp?usp=drive_link"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div align='center'>
+          <a><img src="static/images/teaser.png"  height="220" ></a>
+        </div>
+      <div class="subtitle has-text-centered">
+        <b>Motivation of Efficient Chain-of-Pixel Reasoning.</b> We propose a novel scheme for reasoning segmentation that effectively regulates reasoning length based on task <b>difficulty</b> and <b>uncertainty</b>. 
+        <br />
+        Our method improves segmentation quality while significantly reducing token usage. A suite of metrics is introduced for holistic evaluations of reasoning quality, segmentation accuracy, and computational efficiency.
+      <div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Existing reasoning segmentation approaches typically fine-tune multimodal large language models (MLLMs) using image-text pairs and corresponding mask labels. 
+            However, they exhibit limited generalization to out-of-distribution scenarios without an explicit reasoning process. 
+            Although recent efforts leverage reinforcement learning through group-relative policy optimization (GRPO) to enhance reasoning ability, 
+            they often suffer from overthinking—producing uniformly verbose reasoning chains irrespective of task complexity. 
+            This results in elevated computational costs and limited control over reasoning quality. To address this problem, we propose <span class="dnerf">PixelThink</span>, 
+            a simple yet effective scheme that integrates externally estimated task difficulty and internally measured model uncertainty to regulate reasoning generation 
+            within a reinforcement learning paradigm.  The model learns to compress reasoning length in accordance with scene complexity and predictive confidence. 
+            To support comprehensive evaluation, we introduce <span class="dnerf">ReasonSeg-Diff</span>, 
+            an extended benchmark with annotated reasoning references and difficulty scores, 
+            along with a suite of metrics designed to assess segmentation accuracy, reasoning quality, and efficiency jointly. 
+            Experimental results demonstrate that the proposed approach improves both reasoning efficiency and overall segmentation performance. 
+            Our work contributes novel perspectives towards efficient and interpretable multimodal understanding.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+
+    <!-- Method. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Methodology</h2>
+        <div class="content has-text-justified">
+          <p>
+          <b>Overview of <span class="dnerf">PixelThink</span>. </b>
+          (a) Workflow of the reasoning segmentation framework. Given an input image and query, 
+          the model generates a reasoning chain and segmentation reference that guides the segmentation outcome. 
+          (b) The group-relative policy optimization (GRPO) procedure employed during reinforcement fine-tuning. 
+          Our new reward design incorporates both task difficulty and model uncertainty, enabling the model to learn efficient reasoning strategies
+          </p>
+        </div>
+        <div align='center'>
+          <a><img src="static/images/framework.png"  height="220" ></a>
+        </div>
+        </div>
+        <br/>
+      </div>
+    </div>
+    <!--/ Method. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+
+    <!-- Bench. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Benchmark Construction</h2>
+        <div align='center'>
+          <a><img src="static/images/data_engine.png"  height="220" ></a>
+        </div>
+        </div>
+        <br/>
+
+      </div>
+    </div>
+    <!--/ Bench. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+
+    <!-- Exp. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Qualitative Results</h2>
+        <div align='center'>
+          <a><img src="static/images/exp_vis.png"  height="220" ></a>
+        </div>
+        </div>
+        <br/>
+
+
+      </div>
+    </div>
+    <!--/ Exp. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+
+    <!-- Exp. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Quantitative Results</h2>
+        <div align='center'>
+          <a><img src="static/images/table1.png"  height="220" ></a>
+        </div>
+        <div align='center'>
+          <a><img src="static/images/table2.png"  height="220" ></a>
+        </div>
+        </div>
+        <br/>
+
+
+      </div>
+    </div>
+    <!--/ Exp. -->
+  </div>
+</section>
+
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{wang2025pixelthink,
+  author    = {Wang, Song and Fang, Gongfan and Kong, Lingdong and Li, Xiangtai and Xu, Jianyun and Yang, Sheng and Li, Qiang and Zhu, Jianke and Wang, Xinchao},
+  title     = {PixelThink: Towards Efficient Chain-of-Pixel Reasoning},
+  journal   = {arXiv},
+  year      = {2025},
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">nerfies</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
